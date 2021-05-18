@@ -1,0 +1,107 @@
+@import "variables";
+
+.contactUsPage {
+    padding: 50px 0;
+    background-color: #222;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    .container {
+        @media (min-width: 768px) {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    h1 {
+        @include firaSemi;
+        font-size: 50px;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    .contactUsIntroText {
+        margin-bottom: 30px;
+    }
+    .contactForm {
+        input,
+        textarea,
+        select {
+            border: 0 !important;
+            border-radius: 25px !important;
+            background: #fff !important;
+        }
+        .btn-orange {
+            background-color: #ff7d4a !important;
+            color: #fff !important;
+            border: 0 !important;
+            box-shadow: none !important;
+            &:hover {
+                background-color: darken(#ff7d4a, 15%);
+            }
+            @media (min-width: 768px) {
+                float: right;
+            }
+        }
+    }
+    .contactData {
+        margin-bottom: 40px;
+        h2 {
+            @include firaSemi;
+            color: #6fbdba;
+            font-size: 24px;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .tel {
+            margin-top: 15px;
+            display: block;
+            &:before {
+                margin-right: 8px;
+                font: normal normal normal 14px/1 FontAwesome;
+                font-size: 18px;
+                color: #6fbdba;
+                content: "\f095";
+            }
+        }
+        address {
+            display: flex;
+            margin-top: 15px;
+            &:before {
+                margin-right: 8px;
+                font: normal normal normal 14px/1 FontAwesome;
+                font-size: 18px;
+                color: #6fbdba;
+                content: "\f041";
+            }
+        }
+        .moreInfoAddressLink {
+            display: inline-block;
+            margin-top: 15px;
+            color: #ff7d4a;
+        }
+    }
+    .contactLeft {
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+        border-bottom: solid 2px #fff;
+        @media (min-width: 768px) {
+            border-bottom: 0;
+            border-right: solid 2px #fff;
+            padding-right: 50px;
+        }
+    }
+    .contactLeft,
+    .contactRight {
+        @media (min-width: 768px) {
+            width: 45%;
+        }
+    }
+    .contactRight {
+        pading-right: 40px;
+        @media (min-width: 768px) {
+            padding-left: 50px;
+        }
+    }
+}

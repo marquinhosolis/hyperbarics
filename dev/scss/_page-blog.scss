@@ -1,0 +1,127 @@
+@import 'variables';
+
+.pageTitle {
+	background-image: url(../images/blog-page-bg.png);
+}
+
+.blogFilters{
+	padding: 20px;
+	input, select{
+		background: none;
+		width: 100%;
+		padding: 8px 15px;
+		border-radius: 25px;
+		-webkit-appearance: none;
+		border: 1px solid #565656;
+		margin-bottom:10px;
+		@include firaSemi;
+		font-weight: 400;
+		font-size: 16px;
+	}
+	form{
+		margin: 0 10px;
+		position: relative;
+		max-width: 325px;
+		@media(min-width:768px){
+			width: 40%;
+		}
+	}
+	.categorySelect{
+		.fa{
+			position: absolute;
+			top: 10px;
+			right: 15px;
+			font-size: 22px;
+		}
+		
+	}
+	.searchForm{
+		button{
+			position: absolute;
+			top: 9px;
+			right: 10px;
+			background: none;
+			border: 0;
+			font-size: 18px;
+			color: #777;
+			cursor: pointer;
+		}
+	}
+	.container{
+		@media(min-width:768px){
+			display: flex;
+			justify-content: center;
+		}
+	}
+}
+
+.blogShowcase{
+	background-color: #bae2e1;
+	padding: 20px;
+	text-align: center;
+	a{
+		text-decoration: none;
+	}
+	.cards{
+		.card{
+			text-align: left;
+			margin: 25px 10px;
+			.cardImage{
+				margin-bottom: 30px;
+				@include aspect-ratio(4,2);
+				background-color: #dcdcdc;
+				background-position: center center;
+				background-size: cover;
+			}
+			.cardText {
+				h3{
+					color: #616161;
+					font-size: 16px;
+					@include firaSemi;
+					font-weight: 700;
+				}
+				p{
+					color: #868686;
+					margin-bottom: 15px;
+					a{
+						color: #6fbdba;
+						text-decoration: none;
+					}
+				}
+				.excerpt{
+					color: #2f2f2f;
+					font-size: 14px;
+					margin-bottom: 20px;
+				}
+				.readMore {
+					color: #6fbdba;
+					text-decoration: none;
+				}
+			}
+			@media(min-width: 768px){
+				width: 30%;
+			}
+		}
+		@media(min-width: 768px){
+			display: flex;
+			justify-content: center;
+			align-items: stretch;
+			flex-wrap: wrap;
+		}
+	}
+	.showMorePosts{
+		display: none; 
+		color: #86c7c4;
+		font-size: 30px;
+	}
+}
+
+.notFoundBlog {
+	padding: 100px 0;
+	p{
+		@include firaSemi;
+		font-size: 32px;
+		color: #666;
+	}
+	
+}

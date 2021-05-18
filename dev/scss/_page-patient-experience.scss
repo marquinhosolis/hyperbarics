@@ -1,0 +1,155 @@
+@import 'variables';
+
+.coverPatientExperience{
+	.container{
+		@media(min-width:768px){
+			width: auto;
+		}
+	}
+	.coverImage{
+		@include aspect-ratio(4,3);
+		@media(min-width:768px){
+			@include aspect-ratio(5,1 );
+		}
+	}
+}
+
+.patientExperienceIntro{
+	padding: 100px 0 70px;
+	color: #6d6d6d;
+	font-size: 16px;
+	font-weight: 400;
+	.container{
+		@media(min-width:768px){
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+	}
+	.patientExperienceIntroCopy{
+		margin-bottom: 30px;
+		line-height: 24px;
+		@media(min-width:768px){
+			width: 40%;
+			margin: 0 30px;
+		}
+	}
+	.patientExperienceIntroList{
+		h2{
+			color: #584b4b;
+			@include firaSemi;
+			font-size: 36px;
+			margin-bottom: 10px;
+		}
+		ul{
+			li{
+				margin-bottom: 10px;
+				&:before {
+					content: "\f0da";
+					font: normal normal normal 14px/1 FontAwesome;
+					color: #ff7d4a;
+					margin-right: 5px;
+					font-size: 18px;
+				}
+			}
+		}
+		@media(min-width:768px){
+			width: 40%;
+			margin: 0 30px;
+		}
+	}
+	.patientExperienceIntroVideo{
+		margin-top: 50px;
+		text-align: center;
+		.patientExperienceIntroVideoIframe{
+			max-width: 500px;
+			iframe{
+				max-width: 100%;
+			}
+		}
+		
+		@media(min-width:768px){
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			h2{
+				max-width: 450px;
+				margin-right: 50px;
+			}
+		}
+	}
+}
+
+.virtualTour{
+	padding: 120px 0 100px;
+	h3{
+		color: #ffffff;
+		@include firaSemi;
+		font-size: 36px;
+		font-weight: 500;
+		margin-bottom: 20px;
+		max-width: 500px;
+	}
+}
+
+.patientExperienceTravel{
+	position: relative;
+	padding: 50px 0;
+	padding-bottom: 60px;
+	h2{
+		width: 100%;
+	}
+	.patientExperienceTravelCopy{
+		color: #6d6d6d;
+		font-size: 16px;
+		margin-bottom: 40px;
+		@media(min-width:768px){
+			max-width: 480px;
+			margin: 0 20px;
+		}
+	}
+	.patientExperienceTravelMap{
+		iframe{
+			max-width: 100%;
+			height: 350px;
+		}
+		@media(min-width:768px){
+			max-width: 480px;
+			margin: 0 20px;
+		}
+	}
+	.btn{
+		display: inline-block;
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		z-index: 1;
+		transform: translate(-50%, 50%);
+	}
+	@media(min-width:768px){
+		.container{
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			flex-direction: row-reverse;
+			flex-wrap: wrap;
+		}
+	}
+}
+
+.gallery{
+	padding: 80px 0;
+	background-size: cover;
+	background-position: center center;
+	background-color: #000;
+	.subtitle{
+		color: #fff;
+	}
+	.galleryWrapper{
+		margin: auto;
+		.ngg-galleryoverview.default-view .ngg-gallery-thumbnail img{
+			border-radius: 10px;
+			width: 100%;
+		}
+	}
+}

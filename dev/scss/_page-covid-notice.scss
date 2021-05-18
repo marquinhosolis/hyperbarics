@@ -1,0 +1,143 @@
+.covid-notice-link a {
+    padding: 5px 25px;
+    background-color: #ffffff;
+    color: #469693 !important;
+    border-radius: 8px;
+    font-size: 13px;
+}
+.covid-notice-link a:before {
+    display: none;
+}
+.covid-notice-link a:hover {
+    opacity: 0.7;
+}
+.covidTitle {
+    padding: 80px 0;
+}
+.covidTitle .subtitle {
+    margin-bottom: 15px;
+    font-size: 46px;
+    text-transform: uppercase;
+}
+.covidTitle h2 {
+    text-align: left;
+}
+.covidTitle h2:after {
+    display: none;
+}
+.covidTitle p {
+    color: #fff;
+    font-size: 18px;
+    max-width: 650px;
+}
+@media (min-width: 768px) {
+    .covidTitle {
+        margin-bottom: 30px;
+    }
+}
+.covidNoticePageContent .container {
+    padding: 0;
+    margin-bottom: 50px;
+}
+@media (min-width: 768px) {
+    .covidNoticePageContent .container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+}
+.covidNoticePageContent .covidNoticePageContentAside {
+    padding: 20px;
+    padding-top: 0;
+    background-color: #ebebeb;
+}
+.covidNoticePageContent .covidNoticePageContentAside h3 {
+    padding-top: 30px;
+    color: #6fbdba;
+    font-size: 28px;
+    font-weight: bold;
+}
+.covidNoticePageContent .covidNoticePageContentAside ul {
+    font-weight: bold;
+    font-size: 18px;
+    color: #494a54;
+}
+.covidNoticePageContent .covidNoticePageContentAside ul li {
+    padding: 3px 0;
+}
+.covidNoticePageContent .covidNoticePageContentAside a {
+    -webkit-transition: all linear 0.25s;
+    transition: all linear 0.25s;
+    text-decoration: none;
+    color: inherit;
+}
+.covidNoticePageContent .covidNoticePageContentAside a:hover {
+    color: #6fbdba;
+}
+.covidNoticePageContent .covidNoticePageContentAside p span {
+    color: #6fbdba;
+}
+@media (min-width: 768px) {
+    .covidNoticePageContent .covidNoticePageContentAside {
+        width: 18%;
+    }
+}
+.covidNoticePageContent
+    .covidNoticePageContentMain
+    .covidNoticePageContentMainSection {
+    padding: 30px 20px;
+    margin-bottom: 10px;
+    background-color: #ebebeb;
+    line-height: 1.5;
+    color: #494a54;
+}
+.covidNoticePageContent
+    .covidNoticePageContentMain
+    .covidNoticePageContentMainSection
+    h4 {
+    font-weight: bolder;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.covidNoticePageContent
+    .covidNoticePageContentMain
+    .covidNoticePageContentMainSection
+    a {
+    color: #ff7d4a;
+    text-decoration: none;
+}
+.covidNoticePageContent
+    .covidNoticePageContentMain
+    .covidNoticePageContentMainSection
+    a:hover {
+    text-decoration: underline;
+}
+.covidNoticePageContent
+    .covidNoticePageContentMain
+    .covidNoticePageContentMainSection
+    ul
+    li:before {
+    content: "•";
+    margin-right: 5px;
+}
+.covidNoticePageContent
+    .covidNoticePageContentMain
+    .covidNoticePageContentMainSection:nth-child(3n + 1) {
+    background: #fff;
+}
+.covidNoticePageContent
+    .covidNoticePageContentMain
+    .covidNoticePageContentMainSection:nth-child(3n + 2) {
+    background-color: #dcf0f0;
+}
+@media (min-width: 768px) {
+    .covidNoticePageContent .covidNoticePageContentMain {
+        width: 78%;
+    }
+}

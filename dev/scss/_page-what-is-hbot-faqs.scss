@@ -1,0 +1,54 @@
+@import 'variables';
+
+.whatIsPage{
+	.contactUsHome{
+		background-color: #dcf0f0;
+	}
+	.WhatIsFaqQuestions{
+		padding: 80px 0;
+		.question{
+			a{
+				text-decoration: none;
+				color: inherit;
+			}
+			background-color: #dcf0f0;
+			padding: 20px 25px;
+			border-radius: 8px;
+			margin-bottom: 15px;
+			.WhatIsFaqQuestionsTitle{
+				color: #3f3f3f;
+				@include firaSemi;
+				font-size: 18px;
+				&:before{
+					content: "\f078";
+					font: normal normal normal 14px/1 FontAwesome;
+					float: right;
+					color: #ff7d4a;
+					font-size: 24px;
+				}
+			}
+			.WhatIsFaqQuestionsTitle--open{
+				&:before{
+					transform: rotate(180deg);
+				}
+			}
+			.WhatIsFaqQuestionsAnswer{
+				display: none;
+				margin-top: 10px;
+				color: #666;
+				line-height: 22px;
+				ul{
+					list-style: disc;
+					padding-left: 20px;
+				}
+				a{
+					color: #75c5c3;
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+	.contactUsHome{
+		padding: 25px 0;
+	}
+}

@@ -1,0 +1,37 @@
+.schedulePage{
+	.container{
+		@media(min-width: 768px){
+			flex-direction: column;
+			.contactLeft{
+				max-width: 400px;
+				margin: auto;
+				border-right: 0;
+				text-align: center;
+				form{
+					label{
+						color: #ffff;
+						text-align: center;
+						//display: block !important;
+					}
+				}
+			}
+			.contactRight{
+				width: 100%;
+				border-top: solid 2px #fff;
+				display: flex;
+				align-items: flex-end;
+				justify-content: space-between;
+			}
+		}
+	}
+	.contactForm {
+		.frm_submit{
+			text-align: center;
+			.btn-orange{
+				float: none;
+				min-width: 150px;
+				text-align: center;
+			}
+		}
+	}
+}

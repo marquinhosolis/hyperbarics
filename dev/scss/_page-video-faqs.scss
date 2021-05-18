@@ -1,0 +1,64 @@
+@import 'variables';
+.pageVideoFaqs{
+	.pageTitle{
+		padding: 50px 0;
+		position: relative;
+		.coverMask{
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			background: #000;
+			opacity: 0.6;
+			z-index: 1;
+		}
+		.container{
+			position: relative;
+			z-index: 2;
+			text-align: center;
+			@include firaSemi;
+		}
+		.subtitle{
+			display: block;
+			font-size: 24px;
+			margin-bottom: 30px;
+		}
+		
+		h1{
+			color: #fffeff;
+			
+			font-size: 48px;
+			margin-bottom: 30px;
+		}
+		p{
+			color: #fffeff;
+			font-size: 18px;
+		}
+		a{
+			i{
+				color: #6fbdba;
+				font-size: 62px;
+			}
+		}
+	}
+	.blogShowcase {
+		.cards{
+			a{
+				text-decoration: none;
+			}
+			.card{
+				.cardText{
+					p{
+						a{
+							color: #868686;
+						}
+					}
+					.readMore{
+						font-size: 18px;
+					}
+				}
+			}	
+		}
+	}
+}

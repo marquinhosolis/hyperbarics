@@ -1,0 +1,108 @@
+footer {
+    background-color: #2f2f2f;
+    padding: 60px 0 20px;
+    text-align: center;
+    @media (min-width: 768px) {
+        text-align: left;
+    }
+    color: #fff;
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+    .logoFooter {
+        margin-bottom: 20px;
+    }
+    .container {
+        @media (min-width: 768px) {
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+
+    .socialFooter {
+        margin: 40px 0 20px;
+        background-color: #75c5c3;
+        color: #fff;
+        padding: 15px;
+        font-size: 19px;
+        text-align: center;
+        a {
+            margin: 0 3px;
+            &:hover {
+                color: #ff7d4a;
+            }
+        }
+    }
+    .dppaFooter {
+        text-align: center;
+    }
+}
+
+// .contactFooter {
+//     p {
+//         color: #fffeff;
+//         margin-bottom: 20px;
+//         &:before {
+//             font: normal normal normal 14px/1 FontAwesome;
+//             font-size: 18px;
+//             color: #ff7d4a;
+//             margin-right: 8px;
+//             margin-top: 3px;
+//         }
+//         &:nth-child(1) {
+//             &:before {
+//                 content: "\f095";
+//             }
+//         }
+//         &:nth-child(2) {
+//             &:before {
+//                 content: "\f017";
+//             }
+//         }
+//         @media (min-width: 768px) {
+//             display: flex;
+//         }
+//     }
+// }
+
+address {
+    display: block;
+}
+
+.formFooter {
+    margin-top: 10px;
+    p {
+        color: #75c5c3;
+        font-size: 20px;
+        font-weight: 300;
+        font-style: normal;
+    }
+    fieldset {
+        .frm_fields_container {
+            padding: 5px;
+            border-radius: 9px;
+            border: 1px solid #ababab;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            input {
+                padding: 10px;
+                background: none;
+                border: 0;
+                color: #fff;
+                font-size: 16px;
+                font-family: fira-sans, sans-serif;
+                font-weight: lighter;
+                &::placeholder {
+                    color: #fff;
+                }
+            }
+            button {
+                border: 0;
+                font-size: 20px;
+                margin-right: 5px;
+            }
+        }
+    }
+}
